@@ -30,7 +30,7 @@
     <h2>About Me</h2>
     <p>I enjoy coding, design, and building creative projects. My focus is on learning HTML, CSS, and JavaScript to create interactive websites.</p>
     <video width="400" controls>
-      <source src="/Users/user/Downloads/v14044g50000d09e4d7og65viate38fg.mov" type="video/mp4">
+      <source src="images/vid.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
   </section>
@@ -40,42 +40,36 @@
     <h2>My Projects</h2>
     <div class="project-grid">
       <div class="project-card">
-        <img src="https://images.pexels.com/photos/6308163/pexels-photo-6308163.jpeg" alt="Project 1">
+        <img src="images/project1.png" alt="Screenshot of Project One website">
         <h3>Project One</h3>
         <p>A simple website built with HTML and CSS.</p>
       </div>
       <div class="project-card">
-        <img src="/Users/user/Desktop/Screenshot 2025-11-23 at 10.23.33 PM.png" alt="Project 2">
+        <img src="images/project2.png" alt="Screenshot of Project Two layout">
         <h3>Project Two</h3>
         <p>A responsive portfolio layout with custom styling.</p>
       </div>
     </div>
   </section>
 
-  <!-- GitHub Section -->
-  <section id="github">
-    <h2>My GitHub</h2>
-    <p>Check out my projects on <a href="https://github.com/MustafaMohamedsalih" target="_blank">GitHub</a>.</p>
-  </section>
-
   <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <form class="contact-form" onsubmit="showConfirmation(event)">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-    <p id="confirmation-message" class="hidden">✅ Thanks for your message! I’ll get back to you soon.</p>
-  </section>
+<section id="contact">
+  <h2>Contact Me</h2>
+  <form class="contact-form" onsubmit="showConfirmation(event)">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+  <p id="confirmation-message" class="hidden">✅ Thanks for your message! I’ll get back to you soon.</p>
+</section>
 
-  <!-- Simple JavaScript for confirmation -->
-  <script>
-    function showConfirmation(event) {
-      event.preventDefault(); // prevent actual submission
-      document.getElementById('confirmation-message').classList.remove('hidden');
-    }
-  </script>
+<!-- Simple JavaScript for confirmation -->
+<script>
+  function showConfirmation(event) {
+    event.preventDefault(); // prevent actual submission
+    document.getElementById('confirmation-message').classList.remove('hidden');
+  }
+</script>
 </body>
 </html>
